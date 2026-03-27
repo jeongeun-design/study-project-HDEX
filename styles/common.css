@@ -1,5 +1,5 @@
 #wrap {}
-#wrap header {}
+#wrap header {position: fixed; z-index: 999; width: 100%; background-color: #fff;}
 #wrap header #h_top {background-color: #000; text-align: center;}
 #wrap header #h_top a {color: #fff; font-size: 0.75rem; line-height: 34px;}
 #wrap header #h_bottom {
@@ -13,12 +13,12 @@
 #wrap header #h_bottom h1 a img {width: 100%;}
 #wrap header #h_bottom #gnb {display: flex; flex-flow: row nowrap; gap: 16px;}
 #wrap header #h_bottom #gnb a {
-    background-color: aqua; 
     line-height: 40px; width: 80px; 
     display: block; 
     text-align: center;
 }
-#wrap header #h_bottom .lnb {display: flex; flex-flow: row nowrap; gap: 16px;}
-#wrap header #h_bottom .lnb li {}
-#wrap header #h_bottom .lnb li a:first-child {line-height: 24px;}
-#wrap footer {}
+#wrap header #h_bottom .lnb {display: flex; flex-flow: row nowrap; gap: 16px; align-items: center;}
+#wrap header #h_bottom .lnb li {line-height: 24px;}
+#wrap header #h_bottom .lnb li a {display: flex; align-items: center;}
+#wrap header #h_bottom .lnb li a img {width: 100%;}
+#wrap footer {background-color: grey;}
