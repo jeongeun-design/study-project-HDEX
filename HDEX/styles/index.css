@@ -123,7 +123,7 @@
 #wrap main .promotion_bnr .promotion .swiper-wrapper .slide1 {background-image: url(../images/promotion_bnr_001.jpg);}
 #wrap main .promotion_bnr .promotion .swiper-wrapper .slide2 {background-image: url(../images/promotion_bnr_002.jpg);}
 /* ============================================================================================festa */
-#wrap main .festa {display: grid; grid-template-columns: 3fr 7fr; gap: 66px; padding: 70px 90px;}
+#wrap main .festa {display: grid; grid-template-columns: 4fr 6fr; gap: 66px; padding: 70px 90px;}
 #wrap main .festa .festa_left {
     background-image: url(../images/festa.jpg); background-size: cover; background-position: center;
     position: relative; 
@@ -186,3 +186,4 @@
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_category {}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_title {}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_day {}
+/* ============================================================================================instagram */
