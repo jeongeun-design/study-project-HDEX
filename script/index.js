@@ -22,30 +22,46 @@ const festaSwiper = new Swiper(festaWrap,{
     loop:true,
     slidesPerView:3,
     spaceBetween:20,
+    pagination: {
+        el: '.festa_right .swiper-pagination',
+        type: 'progressbar',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
 
 const promotionSwiper = new Swiper(promotion,{
     loop:true,
     autoplay:{delay:2000,},
-    navigation:{
-        prevEl:'.promotion .prev',
-        nextEl:'.promotion .next',
-    },
 })
 
 const bestSwiper = new Swiper(bestWrap,{
     loop:true,
     slidesPerView:4,
     spaceBetween:20,
+    pagination: {
+        el: '.best_wrap .swiper-pagination',
+        type: 'progressbar',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 })
 
 const newSwiper = new Swiper(newWrap,{
     loop:true,
     slidesPerView:4,
     spaceBetween:20,
-    navigation:{
-        prevEl:'.tab_contents .prev',
-        nextEl:'.tab_contents .next',
+    pagination: {
+        el: '.new_wrap .swiper-pagination',
+        type: 'progressbar',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 })
 

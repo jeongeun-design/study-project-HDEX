@@ -13,22 +13,6 @@
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt span {font-weight: 500; line-height: 1.7;}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide1 {background-image: url(../images/hero_bnr_001.jpg);}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide2 {background-image: url(../images/hero_bnr_002.jpg);}
-#wrap main #hero_bnr .pagi_bar {
-    display: flex; flex-flow: row nowrap;
-    position: absolute;
-    left: 50%; bottom: 44px; transform: translateX(-50%);
-    z-index: 99;
-}
-#wrap main #hero_bnr .swiper-pagination .swiper-pagination-current,
-#wrap main #hero_bnr .swiper-pagination .swiper-pagination-total {position: absolute; top: -6px;}
-#wrap main #hero_bnr .swiper-pagination .swiper-pagination-current {left: -20px;}
-#wrap main #hero_bnr .swiper-pagination .swiper-pagination-total {right: -20px;}
-#wrap main #hero_bnr .pagi_bar .bar_bg {width: 472px; background-color: #A9A9A9; height: 2px;}
-#wrap main #hero_bnr .pagi_bar .bar_bg .bar {
-    width: 0; height: 100%; 
-    background-color: #fff; transition: width 3s linear;
-}
-#wrap main #hero_bnr .swiper-pagination-progressbwr-fill {transition: transform 0.6s ease;}
 /* ============================================================================================ 컬러칩 공통 */
 .thum_color_wrap {}
 .thum_color_wrap .thum_color {}
@@ -42,8 +26,35 @@
 #wrap main .fab #cs {font-size: 1.25rem; font-weight: 600; margin-bottom: 8px;}
 #wrap main .fab #top span {width: 16px; line-height: 14px;}
 #wrap main .fab #top img {width: 100%; height: auto;}
-/* ============================================================================================procut swiper wrap */
-#wrap main .procut {padding: 70px 90px ;}
+/* ============================================================================================product swiper wrap */
+#wrap main .festa_right {padding: 0 0 50px; position: relative; width: 100%; height: auto;}
+#wrap main .festa_right .tab_contents .swiper-pagination-progressbar-fill {
+    background-color: #000;
+    height: 100%;
+}
+#wrap main .festa_right > .tab_contents .swiper-pagination.swiper-pagination-progressbar {
+    width: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: auto; bottom: 0; 
+    height: 2px;
+}
+/*  */
+#wrap main .product {padding: 70px 90px 140px; position: relative; width: 100%; height: auto;}
+#wrap main .product .tab_contents .swiper-pagination-progressbar-fill {
+    background-color: #000;
+    height: 100%;
+}
+#wrap main .product .tab_contents .swiper-pagination.swiper-pagination-progressbar {
+    width: calc(100% - 180px); 
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 30px;
+    top: auto; bottom: 70px;
+    height: 2px;
+}
 #wrap main .product_top {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
@@ -86,13 +97,6 @@
 #wrap main a .details .price {font-size: 0.88rem; line-height: 1.4;}
 #wrap main a .details .price span {color: #727272; margin-right: 6px;}
 #wrap main a .details .price del {color: #C4C4C4;}
-#wrap main .tab_contents .pagi_bar {}
-#wrap main .tab_contents .prev {left: auto; right: 125px;}
-#wrap main .tab_contents .next {right: 80px;}
-#wrap main .tab_contents .prev,
-#wrap main .tab_contents .next {transform: scale(0.42); bottom: 0; top: auto;}
-#wrap main .tab_contents .prev svg,
-#wrap main .tab_contents .next svg {color: #000;}
 /* ============================================================================================promotion swiper wrap */
 #wrap main .promotion_bnr {}
 #wrap main .promotion_bnr .promotion {height: 600px; z-index: 988;}
@@ -118,24 +122,34 @@
 #wrap main .promotion_bnr .promotion .swiper-wrapper .swiper-slide .promotion_txt p span {font-size: 2.5rem;}
 #wrap main .promotion_bnr .promotion .swiper-wrapper .slide1 {background-image: url(../images/promotion_bnr_001.jpg);}
 #wrap main .promotion_bnr .promotion .swiper-wrapper .slide2 {background-image: url(../images/promotion_bnr_002.jpg);}
-#wrap main .promotion_bnr .promotion .prev,
-#wrap main .promotion_bnr .promotion .next {z-index: 999; transform: scale(0.7);}
-#wrap main .promotion_bnr .promotion .prev svg,
-#wrap main .promotion_bnr .promotion .next svg {color: #A1A1A1;}
-#wrap main .promotion_bnr .promotion .prev {left: 30px;}
-#wrap main .promotion_bnr .promotion .next {right: 30px;}
 /* ============================================================================================festa */
-#wrap main .festa {display: grid; grid-template-columns: 680px 1fr; gap: 66px; padding: 70px 90px;}
-#wrap main .festa .festa_left {background-image: url(../images/festa.jpg); position: relative; min-width: 0; display: flex; flex-flow: column nowrap; justify-content: flex-end;}
+#wrap main .festa {display: grid; grid-template-columns: 4fr 6fr; gap: 66px; padding: 70px 90px;}
+#wrap main .festa .festa_left {
+    background-image: url(../images/festa.jpg); background-size: cover; background-position: center;
+    position: relative; 
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 #wrap main .festa .festa_left .festa_left_txt {
     display: flex; justify-content: space-between;  padding: 54px;
 }
 #wrap main .festa .festa_left .festa_left_txt span {color: #fff;}
 #wrap main .festa .festa_left .festa_left_txt span:first-child {font-size: 1.5rem; font-weight: 500;}
 #wrap main .festa .festa_left .festa_left_txt span:last-child {}
-#wrap main .festa .festa_right {max-width: 1000px;}
+#wrap main .festa .festa_right {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 #wrap main .tab_contents .swiper .swiper-wrapper .swiper-slide a {}
-#wrap main .festa .festa_right .festa_swiper {width: 100%; height: 100%; min-width: 0; overflow: hidden;}
+#wrap main .festa .festa_right .festa_swiper {
+    width: 100%; min-width: 0; 
+    overflow: hidden;
+    position: relative;
+}
 #wrap main .festa .festa_right .festa_swiper .swiper-slide {height: 567px;}
 /* ============================================================================================collection */
 #wrap main .collection {margin-left: 90px;}
@@ -166,9 +180,17 @@
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper {}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .archives_bg .archives * {color: #fff;}
-#wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_thum {height: 544px;}
-#wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_thum img {height: 100%;}
+#wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_thum {height: 600px; width: 100%;}
+#wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_thum img {height: 100%; width: auto; object-fit: cover;}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt {}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_category {}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_title {}
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_day {}
+/* ============================================================================================instagram */
+#wrap main .instagram {display: flex; gap: 30px; padding: 70px 30px;}
+#wrap main .instagram .insta_link {}
+#wrap main .instagram .insta_link .instaid {margin-bottom: 20px;}
+#wrap main .instagram .insta_link .instaid img {}
+#wrap main .instagram .insta_link .instaid p {}
+#wrap main .instagram .insta_thum {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;}
+#wrap main .instagram .insta_thum img {width: 100%;}
