@@ -163,14 +163,20 @@
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line {
     display: block; height: 703px;
     background-size: cover; background-position: center top;
+    position: relative;
 }
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide:nth-child(1) .collec_line {background-image: url(../images/collection_001.jpg);}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide:nth-child(2) .collec_line {background-image: url(../images/collection_002.jpg);}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide:nth-child(3) .collec_line {background-image: url(../images/collection_003.jpg);}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide:nth-child(4) .collec_line {background-image: url(../images/collection_001.jpg);}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide:nth-child(4) .collec_line {background-image: url(../images/collection_001.jpg);}
+#wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line .collec_txt {
+    position: absolute; left: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%; padding: 22px 44px; line-height: 108px;
+}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line .collec_txt * {color: #fff; font-weight: 600;}
-#wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line .collec_txt h2 {}
+#wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line .collec_txt h2 {font-size: 1.75rem; margin-bottom: 10px;}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line .collec_txt p {}
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_product {
     margin: 14px 0; display: grid; grid-template-columns: 96px 1fr; gap: 20px;
