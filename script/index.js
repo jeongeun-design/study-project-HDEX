@@ -38,7 +38,7 @@ const promotionSwiper = new Swiper(promotion,{
     autoplay:{delay:2000,},
     navigation: {
         nextEl: '.promotion .swiper-button-next.pr_next',
-        prevEl: '.promotion .swiper-button-prev.pr_next',
+        prevEl: '.promotion .swiper-button-prev.pr_prev',
     },
 })
 
