@@ -55,6 +55,8 @@
     height: 2px;
 }
 /*  */
+.tab_contents .new_swiper {display: none;}
+.tab_contents .new_swiper.active {display: block;}
 #wrap main .product {padding: 70px 90px 140px; position: relative; width: 100%; height: auto;}
 #wrap main .product .tab_contents .swiper-pagination-progressbar-fill {
     background-color: #000;
