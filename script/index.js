@@ -16,7 +16,7 @@ const collectionSwiper = new Swiper(collectionWrap,{
     loop:true,
     slidesPerView:3,
     spaceBetween:28,
-    // autoplay:true,
+    autoplay:true,
 })
 
 const festaSwiper = new Swiper(festaWrap,{
