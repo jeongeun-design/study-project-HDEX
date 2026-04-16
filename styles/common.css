@@ -6,33 +6,55 @@
 #wrap header #h_bottom {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 10px 90px; align-items: center;
+    padding: 0 90px; align-items: center; position: relative;
 }
 #wrap header #h_bottom #logo_gnb {display: flex; flex-flow: row nowrap; align-items: center;}
 #wrap header #h_bottom h1 {margin-right: 62px;}
 #wrap header #h_bottom h1 a {}
 #wrap header #h_bottom h1 a img {width: 100%;}
-header #h_bottom #logo_gnb .gnb_wrap .gnb {display: flex; flex-flow: row nowrap; gap: 16px;}
+header #h_bottom #logo_gnb .gnb_wrap {}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back {
+    display: none;
+    position: absolute; 
+    background-color: rgba(255,255,255,0.9);
+    width: 100%; height: 300px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+header #h_bottom #logo_gnb .gnb_wrap .gnb {display: flex; flex-flow: row nowrap; gap: 16px; position: relative;}
 header #h_bottom #logo_gnb .gnb_wrap .gnb > li {position: relative;}
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:hover > a {font-weight: 600;}
 header #h_bottom #logo_gnb .gnb_wrap .gnb > li > a {
-    line-height: 40px; width: 80px; 
+    line-height: 60px; width: 80px; 
     display: block; 
     text-align: center;
 }
-header #h_bottom #logo_gnb .gnb_wrap .gnb > li .lnb {
-    display: none;
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:nth-child(4), 
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:nth-child(5) {position: static;}
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:nth-child(4) .lnb, 
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:nth-child(5) .lnb {
+    z-index: 200;
+    width: 100vh;
+    top: 60px; left: 0; transform: none;
+    display: none; flex-flow: row nowrap; gap: 16px;
     position: absolute;
-    top: 40px; left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    width: 80px;
-    z-index: 999;
 }
-header #h_bottom #logo_gnb .gnb_wrap .gnb > li .lnb > li {}
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li .lnb {
+    display: none; flex-flow: column nowrap;
+    position: absolute;
+    top: 60px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 400; 
+}
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:nth-child(4) > .lnb > li > a,
+header #h_bottom #logo_gnb .gnb_wrap .gnb > li:nth-child(5) > .lnb > li > a {font-size: 0.94rem; font-weight: 500;}
 header #h_bottom #logo_gnb .gnb_wrap .gnb > li .lnb > li a {
     line-height: 50px; width: 80px; 
     display: block; 
     text-align: center;
+    font-size: 0.88rem; z-index: 300;
 }
 /* ============================================================================================ user_nav */
 #wrap header #h_bottom .user_nav {display: flex; flex-flow: row nowrap; gap: 16px; align-items: center;}
