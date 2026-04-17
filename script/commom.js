@@ -1,9 +1,18 @@
+const topBtn = document.querySelector('.fab #top');
+const csBtn = document.querySelector('.fab #cs');
 const gnb = document.querySelectorAll('header .gnb > li');
 const lnb = document.querySelectorAll('header .lnb');
 const subLnb = document.querySelectorAll('header .sub_lnb');
 const menuBack = document.querySelector('.menu_back');
-console.log(gnb, lnb, subLnb, menuBack);
+console.log(gnb, lnb, subLnb, menuBack, topBtn);
 
+topBtn.addEventListener('click',function(e){
+    e.preventDefault(); 
+    window.scrollTo(0, 0);
+})
+csBtn.addEventListener('click',function(e){
+    e.preventDefault(); 
+})
 
 for(let i of gnb){
     console.log(i.children[0]);

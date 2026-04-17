@@ -1,12 +1,13 @@
 #wrap {}
-#wrap header {position: fixed; z-index: 999; width: 100%; background-color: #fff;}
-#wrap header #h_top {background-color: #000; text-align: center;}
-#wrap header #h_top a {color: #fff; font-size: 0.75rem; line-height: 34px;}
+#wrap header {z-index: 999; width: 100%; background-color: #fff; position:sticky; left: 0; top: 0; width: 100%; z-index: 999;}
+#wrap #h_top {background-color: #000; text-align: center;}
+#wrap #h_top a {color: #fff; font-size: 0.75rem; line-height: 34px;}
 
 #wrap header #h_bottom {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 0 90px; align-items: center; position: relative;
+    padding: 0 90px; align-items: center; 
+    position: relative;
 }
 #wrap header #h_bottom #logo_gnb {display: flex; flex-flow: row nowrap; align-items: center;}
 #wrap header #h_bottom h1 {margin-right: 62px;}
