@@ -95,8 +95,10 @@ const promotionSwiper = new Swiper(promotion,{
 
 const bestSwiper = new Swiper(bestWrap,{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:'auto',
+    spaceBetween:20, 
+    centeredSlides: false,
+    autoHeight: true,
     pagination: {
         el: '.best_wrap .swiper-pagination',
         type: 'progressbar',
