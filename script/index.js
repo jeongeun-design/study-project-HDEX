@@ -1,18 +1,36 @@
 const hero = document.querySelector('.hero_swiper');
-const newWrap = document.querySelector('.new_swiper');
+const newWrap = document.querySelectorAll('.new_swiper');
 const bestWrap = document.querySelector('.best_swiper');
 const promotion = document.querySelector('.promotion');
-const festaWrap = document.querySelector('.festa_swiper');
 const collectionWrap = document.querySelector('.collection_swiper');
 const archivesWrap = document.querySelector('.archives_swiper');
 const newTitle = document.querySelectorAll('.new_wrap .tab_menu a');
 const newContent = document.querySelectorAll('.tab_contents .new_swiper');
 const bestTitle = document.querySelectorAll('.best_wrap .tab_menu a');
 const bestContent = document.querySelectorAll('.tab_contents .best_swiper');
-console.log(hero, newWrap, bestWrap, promotion, festaWrap, collectionWrap, archivesWrap);
-console.log('---------');
-console.log(newTitle,newContent,bestTitle,bestContent);
+const festaTitle = document.querySelectorAll('.festa_right .tab_menu a');
+const festaContent = document.querySelectorAll('.festa_right .tab_contents .festa_swiper');
 
+console.log(hero, newWrap, bestWrap, promotion, collectionWrap, archivesWrap);
+console.log('---------');
+console.log(newTitle,newContent,bestTitle,bestContent, festaTitle, festaContent);
+
+/* ================================================festa_swiper 탭메뉴 */
+for(let festaTab of festaTitle){
+    console.log(festaTab);
+    festaTab.addEventListener('click',function(e){
+        e.preventDefault();
+        for (const title of festaTitle) {
+            title.classList.remove('active');
+        }
+        for (const content of festaContent) {
+            content.style.display = 'none';
+        }
+        festaTab.classList.add('active');
+        const festaIndex = this.dataset.index;
+        festaContent[festaIndex].style.display = 'block';
+    });
+}
 /* ================================================best_swiper 탭메뉴 */
 for(let bestTab of bestTitle){
     console.log(bestTab);
@@ -61,7 +79,20 @@ const collectionSwiper = new Swiper(collectionWrap,{
 })
 
 /* ================================================festa Swiper */
-const festaSwiper = new Swiper(festaWrap,{
+const festaTSwiper = new Swiper(festaContent[0],{
+    loop:true,
+    slidesPerView:3,
+    spaceBetween:20,
+    pagination: {
+        el: '.festa_right .swiper-pagination',
+        type: 'progressbar',
+    },
+    navigation: {
+        nextEl: '.festa_right .tab_contents .swiper-button-next.festa_next',
+        prevEl: '.festa_right .tab_contents .swiper-button-prev.festa_prev',
+    },
+})
+const festaBSwiper = new Swiper(festaContent[1],{
     loop:true,
     slidesPerView:3,
     spaceBetween:20,
@@ -127,6 +158,7 @@ const bestSwiper = new Swiper(bestWrap,{
 })
 
 /* ================================================new Swiper */
+/*
 const newASwiper = new Swiper(newContent[3],{
     loop:true,
     slidesPerView:4,
@@ -165,18 +197,18 @@ const newMSwiper = new Swiper(newContent[1],{
         nextEl: '.new_wrap .tab_contents .swiper-button-next.new_next',
         prevEl: '.new_wrap .tab_contents .swiper-button-prev.new_prev',
     },
-})
+}) */
 const newGSwiper = new Swiper(newContent[0],{
     loop:true,
     slidesPerView:4,
     spaceBetween:20,
     pagination: {
-        el: '.new_wrap .swiper-pagination',
+        el: '.new_wrap .swiper-pagination.gcl_pagination',
         type: 'progressbar',
     },
     navigation: {
-        nextEl: '.new_wrap .tab_contents .swiper-button-next.new_next',
-        prevEl: '.new_wrap .tab_contents .swiper-button-prev.new_prev',
+        nextEl: '.new_wrap .tab_contents .swiper-button-next.glc_next',
+        prevEl: '.new_wrap .tab_contents .swiper-button-prev.glc_prev',
     },
 })
 

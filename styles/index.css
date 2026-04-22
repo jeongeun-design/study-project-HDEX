@@ -80,12 +80,12 @@
 .tab_contents .best_prev {left: auto; right: 138px;}
 .tab_contents .new_next,
 .tab_contents .best_next {right: 90px;}
+.gcl_swiper {}
 #wrap main .product .tab_contents .swiper-pagination.swiper-pagination-progressbar {
     width: calc(100% - 180px); 
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    bottom: 30px;
     top: auto; bottom: 70px;
     height: 2px;
 }
