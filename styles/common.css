@@ -31,6 +31,25 @@ header #h_bottom #logo_gnb .gnb_wrap .menu_back {
     transform: translateX(-50%);
     z-index: 100;
 }
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr span:nth-child(4) em {font-size: 0.75rem; margin-bottom:12px; color: #fff;}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr span:nth-child(4) {
+    display: block; 
+    width: 205px; line-height: 28px; 
+    border: 1px solid #fff; text-align: center;
+}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr span:nth-child(3) {font-size: 0.88rem; font-weight: 600; margin-bottom:20px;}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr span:nth-child(2) {font-size: 1.5rem; font-weight: 700; margin-bottom:12px;}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr span:nth-child(1) {font-size: 0.75rem; margin-bottom:12px;}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr > * {
+    color: #fff; font-weight: 500;
+}
+header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr {
+    position: absolute; top: 29px; right: 118px;
+    background-image: url(../images/menu_bnr_001.jpg);
+    background-size: cover; background-position: center;
+    width: 680px; height: 193px;
+    display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;
+}
 header #h_bottom #logo_gnb .gnb_wrap .gnb {display: flex; flex-flow: row nowrap; gap: 16px; position: relative;}
 header #h_bottom #logo_gnb .gnb_wrap .gnb > li {position: relative;}
 header #h_bottom #logo_gnb .gnb_wrap .gnb > li:hover > a {font-weight: 600;}
