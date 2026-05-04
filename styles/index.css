@@ -5,10 +5,11 @@
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt {position: absolute; left: 280px; bottom: 125px;}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt > * {color: #fff;}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt p .pc,
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt p {
     font-size: 2.5rem; font-weight: 700; 
     line-height: 1.43;
-    margin-bottom: 10px;
+    margin-bottom: 10px; color: #fff;
 }
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt span {font-weight: 500; line-height: 1.7;}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide1 {background-image: url(../images/hero_bnr_001.jpg);}
@@ -56,12 +57,8 @@
     height: 2px;
 }
 /* swiper 설정 */
-/* .best_women_swiper {padding-bottom: 70px;} */
 .new_ct_wrap, .best_ct_wrap, .festa_ct_wrap, .archives_ct_wrap {display: none;}
 .new_ct_wrap.active, .best_ct_wrap.active, .festa_ct_wrap.active, .archives_ct_wrap.active {display: block;}
-/* .tab_contents .new_swiper,
-.tab_contents .festa_swiper,
-.tab_contents .best_swiper {display: none;} */
 .tab_contents .swiper.active {display: block;}
 .tab_contents .best {display: none;}
 .tab_contents .best.active {display: block;}
@@ -148,7 +145,7 @@
     font-size: 1.25rem;
     text-align: center; z-index: 100;
 }
-#wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide .potho {overflow: hidden; }
+#wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide .potho {overflow: hidden;}
 #wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide-active .potho {
     overflow: hidden; height: 680px; display: block;
 }
@@ -158,8 +155,8 @@
     height: 100%;
     object-fit: cover;
 }
+#wrap main .tab_contents .best_swiper .swiper-wrapper {align-items: center;}
 #wrap main .tab_contents .swiper {}
-#wrap main .tab_contents .swiper .swiper-wrapper {align-items: center;}
 #wrap main .tab_contents .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .tab_contents .swiper .swiper-wrapper .swiper-slide a {}
 #wrap main .tab_contents .swiper .swiper-wrapper .swiper-slide a .potho {margin-bottom: 22px;}
@@ -267,7 +264,7 @@
 #wrap main .archives_bg .archives {}
 #wrap main .archives_bg .archives .product_top {padding-right: 90px;}
 #wrap main .archives_bg .archives .product_top * {color: #fff;}
-#wrap main .archives_bg .archives .product_top .more img {filter: invert(100%);}
+#wrap main .archives_bg .archives .product_top .more img {filter: invert(1);}
 #wrap main .archives_bg .archives .product_top .tab_menu {}
 #wrap main .archives_bg .archives .product_top .tab_menu a {font-weight: 300; width: 100%; color: #9E9E9E;}
 #wrap main .archives_bg .archives .product_top .tab_menu a.active {color: #fff;}

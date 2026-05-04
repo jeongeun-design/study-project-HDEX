@@ -76,7 +76,6 @@ for(let bestTab of bestTitle){
 }
 /* ================================================new_swiper 탭메뉴 */
 for(let newTab of newTitle){
-    console.log(newTab);
     newTab.addEventListener('click',function(e){
         e.preventDefault();
         for (const title of newTitle) {
@@ -94,8 +93,19 @@ for(let newTab of newTitle){
 /* ================================================archives Swiper */
 const archivesJSwiper = new Swiper(archivesContent[0].children[0],{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:20,
+    slidesPerView:1,
+    spaceBetween:15,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:8,
+        }, 
+        1024:{
+            slidesPerView:3,
+            spaceBetween:28,
+        }, 
+    },
 })
 const archivesSSwiper = new Swiper(archivesContent[1].children[0],{
     loop:true,
@@ -115,9 +125,20 @@ const archivesLSwiper = new Swiper(archivesContent[3].children[0],{
 /* ================================================collection Swiper */
 const collectionSwiper = new Swiper(collectionWrap,{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:28,
     autoplay:true,
+    slidesPerView:1,
+    spaceBetween:0,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:8,
+        }, 
+        1024:{
+            slidesPerView:3,
+            spaceBetween:28,
+        }, 
+    },
 })
 
 /* ================================================festa Swiper */
@@ -137,8 +158,19 @@ const festaBSwiper = new Swiper(festaContent[1].children[0],{
 })
 const festaTSwiper = new Swiper(festaContent[0].children[0],{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:10,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:2,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.festa_top_pagination',
         type: 'progressbar',
@@ -190,8 +222,19 @@ const bestWSwiper = new Swiper(bestContent[1].children[0],{
 })
 const bestMSwiper = new Swiper(bestContent[0].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.best_man_pagination',
         type: 'progressbar',
@@ -206,8 +249,19 @@ const bestMSwiper = new Swiper(bestContent[0].children[0],{
 
 const newASwiper = new Swiper(newContent[3].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{},
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.new_wrap .swiper-pagination.new_acc_pagination',
         type: 'progressbar',
@@ -219,8 +273,19 @@ const newASwiper = new Swiper(newContent[3].children[0],{
 })
 const newWSwiper = new Swiper(newContent[2].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.new_wrap .swiper-pagination.new_women_pagination',
         type: 'progressbar',
@@ -232,8 +297,19 @@ const newWSwiper = new Swiper(newContent[2].children[0],{
 })
 const newMSwiper = new Swiper(newContent[1].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.new_wrap .swiper-pagination.new_men_pagination',
         type: 'progressbar',
@@ -245,8 +321,19 @@ const newMSwiper = new Swiper(newContent[1].children[0],{
 })
 const newGSwiper = new Swiper(newContent[0].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{}, //640 이상일때
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, //768 이상일때
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, //1024 이상일때
+    },
     pagination: {
         el: '.new_wrap .swiper-pagination.new_glc_pagination',
         type: 'progressbar',
@@ -259,7 +346,7 @@ const newGSwiper = new Swiper(newContent[0].children[0],{
 
 /* ================================================hero Swiper */
 const heroSwiper = new Swiper(hero,{
-    autoplay:{delay:3400,},
+    // autoplay:{delay:3400,},
     loop:true,
     pagination: {
         el: '.hero_swiper .swiper-pagination',

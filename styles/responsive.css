@@ -1,6 +1,161 @@
-/* @media screen and (max-width:520px) {
+@media screen and (max-width:520px) {
+    /* 헤더 */
+    #wrap header {padding: 60px 15px 12px; top: 0; left: 0; width: 100%;}
+    #wrap header #h_bottom {padding: 0;}
     #h_top {display: none;}
     #h_bottom #logo_gnb .gnb_wrap {display: none;}
     #h_bottom .user_nav li:nth-child(1) {display: none;}
     #h_bottom .user_nav li:nth-child(2) {display: none;}
-} */
+    /* 히어로 배너 */
+    #wrap main #hero_bnr .hero_swiper {height: 524px; width: 100%;}
+    #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt {left: auto; right: 35px; bottom: 50px;}
+    #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt {text-align: right;}
+    #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt p .pc {display: none;}
+    #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    }
+    #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .hero_txt span {font-size: 0.88rem;}
+    /* 상품 슬라이더 공통 */
+    #wrap main .product {padding: 20px 0;}
+    #wrap main .product_top {padding: 0 15px;}
+    #wrap main a .details {padding: 0 8px;}
+    .tab_contents .swiper-pagination.swiper-pagination-progressbar {display: none;}
+    .tab_contents [class*="_prev"],
+    .tab_contents [class*="_next"] {display: none;}
+    #wrap main .tab_contents .swiper .swiper-wrapper .swiper-slide a .potho {margin-bottom: 8px;}
+    /* 슬라이더 탭메뉴 */
+    #wrap main .product_top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; text-align: center;
+    margin-bottom: 24px;
+    }
+    #wrap main .product_top .title_menu {display: flex; flex-flow: column nowrap; justify-content: flex-start;}
+    #wrap main .product_top .title_menu > h1 {
+        font-size: 1.25rem; font-weight: 600;
+        margin-right: 42px;
+        text-align: left; margin-bottom: 5px;
+    }
+    #wrap main .product_top .title_menu .tab_menu {
+        display: flex; flex-flow: row nowrap; 
+        gap: 20px;
+        text-align: center;
+    }
+    #wrap main .product_top .title_menu .tab_menu .active {
+        border-bottom: 1px solid #000; font-weight: 500; color: #000;
+    }
+    #wrap main .product_top .more {
+        width: 88px; display: flex; flex-flow: row nowrap; align-items: center; justify-content: center;
+    }
+    #wrap main .product_top .more span {font-size: 0.75rem;;}
+    #wrap main .product_top .more .more_icon {width: 24px; display: flex; align-items: center; margin-left: 10px;}
+    #wrap main .product_top .more img {width: 100%;}
+    #wrap main .product_top .title_menu .tab_menu {
+    display: flex; flex-flow: row nowrap; 
+    gap: 20px;
+    text-align: center;
+    }
+    #wrap main .product_top .title_menu .tab_menu a {
+        font-size: 0.75rem; 
+        line-height: 30px; width: 44px;
+    }
+    #wrap main .new_wrap .product_top .more {padding-bottom: 37px;}
+    #wrap main .product_top .more {
+        width: 45px;
+        align-items: center;
+    }
+    #wrap main .product_top .more .more_icon {width: 12px; margin-left: 6px;}
+    /* 프로모션 배너 */
+    #wrap main .promotion_bnr {margin: 16px 0;}
+    #wrap main .promotion_bnr .promotion {height: 146px;}
+    #wrap main .promotion_bnr .promotion .swiper-wrapper {}
+    #wrap main .promotion_bnr .promotion .swiper-wrapper .swiper-slide::after {
+        content: ''; display: block; 
+        position: absolute; 
+        width: 100%; height: 100%; left: 0; top: 0;
+        background: linear-gradient(transparent, #000 74%);
+        opacity: 0.2;
+        z-index: 150;
+    }
+    #wrap main .promotion_bnr .promotion .swiper-wrapper .swiper-slide .promotion_txt {
+        position: absolute; z-index: 200;
+        bottom: 20px; left: auto; right: 15px; text-align: right;
+    }
+    #wrap main .promotion_bnr .promotion .swiper-wrapper .swiper-slide .promotion_txt * {
+        font-weight: 700; line-height: 1.43; 
+        color: #fff; 
+    }
+    #wrap main .promotion_bnr .promotion .swiper-wrapper .swiper-slide .promotion_txt p {font-size: 0.75rem;}
+    #wrap main .promotion_bnr .promotion .swiper-wrapper .swiper-slide .promotion_txt p span {font-size: 1.13rem;}
+    .promotion_bnr .promotion .swiper-button-prev.pr_prev,
+    .promotion_bnr .promotion .swiper-button-next.pr_next {display: none;}
+    /* 베스트 Swiper */
+    #wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide a .best_num,
+    #wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide-active a span.best_num {
+        width: 22px; line-height: 22px;
+        font-size: 0.63rem;
+    }
+    #wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide-active .potho {
+        height: auto;
+    }
+    #wrap main .tab_contents .best_swiper .swiper-wrapper .swiper-slide-active .potho img {
+        transform: scale(1);
+    }
+    #wrap main .tab_contents .best_swiper .swiper-wrapper {align-items: stretch;}
+    /* 페스타 Swiper */
+    #wrap main .festa {
+        display: block; padding: 160px 15px 20px; 
+        background-image: url(../images/festa_mb.jpg);
+        background-position: center top; background-size: cover;
+    }
+    #wrap main .festa_right {padding: 0;}
+    #wrap main .festa .festa_left {display: none;}
+    #wrap main .festa_right .product_top {padding: 0;}
+    #wrap main .festa_right .product_top * {filter: invert(1); color: #fff;}
+    #wrap main .festa .product_top .title_menu .tab_menu,
+    .festa_right .tab_contents .festa_prev,
+    .festa_right .tab_contents .festa_next {display: none;}
+    #wrap main .festa .festa_right {gap: 0;}
+    #wrap main .festa .festa_right .festa_swiper {padding-bottom: 0;}
+    #wrap main .festa .festa_right .festa_swiper .swiper-slide {height: auto;}
+    #wrap main .festa .festa_right .details h2 {color: #fff;}
+    #wrap main .festa .festa_right .details .price span {color: #fff;}
+    #wrap main .festa .thum_color_wrap .thum_color {border: 1px solid #fff;}
+    /* collection */
+    #wrap main .collection {margin:0; padding: 40px 15px 50px;}
+    #wrap main .collection .product_top {margin: 0 0 15px; padding: 0;}
+    #wrap main .collection .collection_swiper {}
+    #wrap main .collection .collection_swiper .swiper-wrapper {}
+    #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide {}
+    #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_line {min-height: 432px; max-height: 466px;}
+    /* archive */
+    #wrap main .archives_bg {padding: 20px 15px 40px; background: none;}
+    #wrap main .archives_bg .archives .product_top {margin: 0 0 15px; padding: 0;}
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_thum {
+        min-height: 193px; max-height: 200px;
+    }
+    #wrap main .archives_bg .archives .product_top .tab_menu {display: none;}
+    #wrap main .archives_bg .archives .product_top .more img {filter: none;}
+    #wrap main .archives_bg .archives .product_top *,
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt p,
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt a {color: #000}
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_category {
+        padding: 1.5px 3.5px;
+        background-color: rgba(255, 255, 255, 0.6); color: #525252; 
+        font-size: 0.75rem;
+        display: inline-block;
+        border-radius: 2px;
+    }
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide::after {
+    content: ''; display: block; 
+    position: absolute; 
+    width: 100%; height: 100%; left: 0; top: 0;
+    background: linear-gradient(transparent, #fff 160px);
+    opacity: 0.4;
+    z-index: 150;
+    }
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt {
+        position: absolute; bottom: 10px; left: 10px; z-index: 200;
+    }
+    #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_day {display: none;}
+}
