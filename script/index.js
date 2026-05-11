@@ -153,8 +153,19 @@ const collectionSwiper = new Swiper(collectionWrap,{
 console.log('.festa_bottom_prev');
 const festaBSwiper = new Swiper(festaContent[1].children[0],{
     loop:true,
-    slidesPerView:3,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:10,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:2,
+            spaceBetween:20,
+        }, 
+        1025:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.festa_bottom_pagination',
         type: 'progressbar',
@@ -174,7 +185,7 @@ const festaTSwiper = new Swiper(festaContent[0].children[0],{
             slidesPerView:2,
             spaceBetween:20,
         }, 
-        1024:{
+        1025:{
             slidesPerView:3,
             spaceBetween:20,
         }, 
