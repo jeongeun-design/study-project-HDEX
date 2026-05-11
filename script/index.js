@@ -95,13 +95,17 @@ const archivesJSwiper = new Swiper(archivesContent[0].children[0],{
     loop:true,
     slidesPerView:1,
     spaceBetween:15,
+    pagination: {
+        el: '.archives_pagination',
+        type: 'progressbar',
+    },
     breakpoints:{
         640:{}, 
         768:{
-            slidesPerView:3,
+            slidesPerView:2,
             spaceBetween:8,
         }, 
-        1024:{
+        1025:{
             slidesPerView:3,
             spaceBetween:28,
         }, 
@@ -128,13 +132,17 @@ const collectionSwiper = new Swiper(collectionWrap,{
     autoplay:true,
     slidesPerView:1,
     spaceBetween:0,
+    pagination: {
+        el: '.collection_pagination',
+        type: 'progressbar',
+    },
     breakpoints:{
         640:{}, 
         768:{
-            slidesPerView:3,
+            slidesPerView:2,
             spaceBetween:8,
         }, 
-        1024:{
+        1025:{
             slidesPerView:3,
             spaceBetween:28,
         }, 
@@ -194,8 +202,19 @@ const promotionSwiper = new Swiper(promotion,{
 /* ================================================best Swiper */
 const bestASwiper = new Swiper(bestContent[2].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.best_acc_pagination',
         type: 'progressbar',
@@ -207,10 +226,19 @@ const bestASwiper = new Swiper(bestContent[2].children[0],{
 })
 const bestWSwiper = new Swiper(bestContent[1].children[0],{
     loop:true,
-    slidesPerView:4,
-    spaceBetween:20,
-    observer: true,
-    observeParents: true,
+    slidesPerView:2,
+    spaceBetween:4,
+    breakpoints:{
+        640:{}, 
+        768:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }, 
+        1024:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }, 
+    },
     pagination: {
         el: '.best_women_pagination',
         type: 'progressbar',
@@ -230,7 +258,7 @@ const bestMSwiper = new Swiper(bestContent[0].children[0],{
             slidesPerView:3,
             spaceBetween:20,
         }, 
-        1024:{
+        1025:{
             slidesPerView:4,
             spaceBetween:20,
         }, 
@@ -329,7 +357,7 @@ const newGSwiper = new Swiper(newContent[0].children[0],{
             slidesPerView:3,
             spaceBetween:20,
         }, //768 이상일때
-        1024:{
+        1025:{
             slidesPerView:4,
             spaceBetween:20,
         }, //1024 이상일때

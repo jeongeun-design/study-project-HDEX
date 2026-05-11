@@ -1,4 +1,4 @@
-#wrap {min-width: 1920px;}
+#wrap {}
 #wrap main #hero_bnr {}
 #wrap main #hero_bnr .hero_swiper {height: 730px; width: 100%;}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper {}
@@ -19,7 +19,8 @@
     height: 100%;
 }
 #hero_bnr .hero_swiper .swiper-pagination.swiper-pagination-progressbar {
-    width: 500px; height: 2px;
+    max-width: 400px; max-width: 500px;
+    height: 2px;
     left: 50%;
     top: auto; bottom: 44px;
     transform: translateX(-50%);
@@ -260,6 +261,20 @@
 #wrap main .collection .collection_swiper .swiper-wrapper .swiper-slide .collec_product .details {}
 
 /* ============================================================================================archives */
+#wrap main .archives_bg .swiper-pagination-progressbar-fill,
+#wrap main .collection .swiper-pagination-progressbar-fill {
+    background-color: #000;
+    height: 100%;
+}
+#wrap main .archives_bg .swiper-pagination.swiper-pagination-progressbar,
+#wrap main .collection .swiper-pagination.swiper-pagination-progressbar {
+    width: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: auto; bottom: 0; 
+    height: 2px;
+}
 #wrap main .archives_bg {background: #000; padding: 70px 0 70px 90px;}
 #wrap main .archives_bg .archives {}
 #wrap main .archives_bg .archives .product_top {padding-right: 90px;}
@@ -298,3 +313,5 @@
 #wrap main .instagram .insta_link .instaid p {font-weight: 500; font-size: 1.25rem;}
 #wrap main .instagram .insta_thum {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;}
 #wrap main .instagram .insta_thum img {width: 100%;}
+#wrap main .archives_bg .swiper-pagination.swiper-pagination-progressbar,
+#wrap main .collection .swiper-pagination.swiper-pagination-progressbar {display: none;}
