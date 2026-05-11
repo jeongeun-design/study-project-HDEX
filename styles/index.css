@@ -287,6 +287,7 @@
 #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_day {font-size: 0.81rem; color: #9D9D9D;}
 /* ============================================================================================instagram */
 #wrap main .instagram {display: flex; gap: 30px; padding: 70px 30px;}
+#wrap main .instagram .insta_mb {display: none;}
 #wrap main .instagram .insta_link {}
 #wrap main .instagram .insta_link .instaid {
     display: grid; grid-template-columns: 36px 1fr; 
