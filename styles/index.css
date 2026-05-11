@@ -1,4 +1,4 @@
-#wrap main {}
+#wrap {min-width: 1920px;}
 #wrap main #hero_bnr {}
 #wrap main #hero_bnr .hero_swiper {height: 730px; width: 100%;}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper {}
