@@ -158,4 +158,18 @@
         position: absolute; bottom: 10px; left: 10px; z-index: 200;
     }
     #wrap main .archives_bg .archives .archives_swiper .swiper-wrapper .swiper-slide .archives_txt .archives_day {display: none;}
+    /* insta */
+    #wrap main .instagram .insta_mb {display: block;}
+    #wrap main .instagram .insta_link_women {display: none;}
+    #wrap main .instagram .insta_link .instaid {display: none;}
+    #wrap main .instagram {display: flex; flex-flow: column nowrap;}
+    #wrap main .instagram .insta_thum {gap: 0;}
+    #wrap main .instagram {padding: 0;}
+    #wrap main .instagram .insta_mb {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-right: 42px;
+        text-align: left;
+        padding: 0 15px ;
+    }
 }
