@@ -23,6 +23,7 @@ html, body, #wrap {
 #wrap header #h_bottom h1 a {}
 #wrap header #h_bottom h1 a img {width: 100%;}
 header #h_bottom #logo_gnb .gnb_wrap {}
+header #h_bottom #logo_gnb a.menu_view {display: none;}
 /* 메뉴 흰색 배경 */
 header #h_bottom #logo_gnb .gnb_wrap .menu_back {
     display: none;
