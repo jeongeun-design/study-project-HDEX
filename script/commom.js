@@ -1,14 +1,18 @@
 const topBtn = document.querySelector('#fab #top');
 const csBtn = document.querySelector('#fab #cs');
+const gnbUl = document.querySelector('header .gnb');
 const gnb = document.querySelectorAll('header .gnb > li');
 const lnb = document.querySelectorAll('header .lnb');
 const subLnb = document.querySelectorAll('header .sub_lnb');
 const menuBack = document.querySelector('.menu_back');
 const searchWrap = document.querySelector('.user_nav .search_wrap');
 const search = document.querySelector('.user_nav .search');
-console.log(gnb, lnb, subLnb, menuBack, topBtn, searchWrap, search);
+const menuView = document.querySelector('#logo_gnb a.menu_view');
+const mBg = document.querySelector('.m_bg');
+console.log(gnb, lnb, subLnb, menuBack, topBtn, searchWrap, search, menuView, mBg, gnbUl);
 
-searchWrap.style.display = 'none';
+
+
 /*
 search.addEventListener('click',function(e){
     e.preventDefault(); 

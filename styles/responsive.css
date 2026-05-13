@@ -1,13 +1,12 @@
 /* 태블릿 */
 @media screen and (max-width:1024px) {
     /* 헤더 */
-    #wrap header {padding:18px 30px; top: 0; left: 0; width: 100%;}
+    #wrap header { top: 0; left: 0; width: 100%;}
     #wrap header #h_bottom {padding: 0;}
     #h_top {display: none;}
-    #h_bottom #logo_gnb .gnb_wrap {display: none;}
+    /* #h_bottom #logo_gnb .gnb_wrap {display: none;} */
     #h_bottom .user_nav li:nth-child(1) {display: none;}
-    #h_bottom .user_nav li:nth-child(2) {display: none;}
-    header #h_bottom #logo_gnb a.menu_view {display: none; margin-right: 20px;}
+    header #h_bottom #logo_gnb a.menu_view {display: block; margin-right: 20px;}
     /* 공통 선택자 */
     #hero_bnr .hero_swiper .swiper-pagination.swiper-pagination-progressbar {
         top: auto; bottom: 40px; 
@@ -124,7 +123,6 @@
     /* 헤더 */
     #wrap header {padding: 60px 15px 12px; top: 0; left: 0; width: 100%;}
     #wrap header #h_bottom {padding: 0;}
-    #h_top {display: none;}
     #h_bottom #logo_gnb .gnb_wrap {display: none;}
     #h_bottom .user_nav li:nth-child(1) {display: none;}
     #h_bottom .user_nav li:nth-child(2) {display: none;}
@@ -300,4 +298,22 @@
         width: calc(100% - 30px);
         display: block;
     }
+}
+@media screen and (max-width:1240px) {
+    #h_top {display: none;}
+    header #h_bottom #logo_gnb .gnb_wrap .menu_back .meun_bnr {display: none;}
+    #wrap header #h_bottom .user_nav li:nth-child(1) {display: none;}
+    #wrap header #h_bottom #logo_gnb {flex-flow: column nowrap; align-items: flex-start;}
+    #wrap header #h_bottom .user_nav {gap: 16px; position: absolute; right: 30px; top: 20px;}
+    #wrap header #h_bottom {padding: 0 30px;}
+    #wrap header #h_bottom h1 {margin: 20px 0 0 0;}
+}
+@media screen and (max-width:680px) {
+    #wrap header #h_bottom .user_nav {gap: 16px; position: absolute; right: 30px; top: 20px;}
+    #wrap header #h_bottom {padding: 0;}
+    #wrap header #h_bottom h1 {margin: 20px 0 0 0;}
+    header #h_bottom #logo_gnb .gnb_wrap .gnb {display: none;}
+    #wrap header {padding: 60px 15px 12px; position: relative;}
+    #wrap header #h_bottom .user_nav {right: 0; top: 20px;}
+    #wrap header #h_bottom .user_nav li a.search {display: none;}
 }
