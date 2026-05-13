@@ -385,7 +385,7 @@ const newGSwiper = new Swiper(newContent[0].children[0],{
 
 /* ================================================hero Swiper */
 const heroSwiper = new Swiper(hero,{
-    // autoplay:{delay:3400,},
+    autoplay:{delay:3400,},
     loop:true,
     pagination: {
         el: '.hero_swiper .swiper-pagination',
